@@ -1,0 +1,24 @@
+/* Last Footer Section - Full Screen Width */
+.Last-footer {
+  width: 100vw;
+  background-color: #f3f3f3;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  position: relative;
+  left: 0;
+}
+
+.Footer-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.Footer-box p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}

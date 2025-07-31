@@ -1,0 +1,95 @@
+/* Main navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo styling */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation links container */
+.center-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Nav list */
+.center-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav link item */
+.center-nav li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover and active states */
+.center-nav li a:hover,
+.center-nav li a.active {
+  color: #E82933;
+  border-bottom: 2px solid #E82933;
+  padding-bottom: 2px;
+}
+
+/* Shop Now Button */
+.center-nav button {
+  background-color: #E82933;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.center-nav button:hover {
+  background-color: #c41f2a;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .center-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .center-nav ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .center-nav button {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,358 @@
+/* Main container */
+.main {
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+/* Universal section spacing */
+.main > section {
+  padding-bottom: 40px;
+}
+
+/* Hero Section */
+.main-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.coverphoto {
+  position: relative;
+  background-image: url('/ice-img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.coverphoto::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.coverphoto h1,
+.coverphoto p,
+.coverphoto button {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.coverphoto h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.coverphoto p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.coverphoto button {
+  cursor: pointer;
+  background-color: #E82933;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.coverphoto button:hover {
+  background-color: #c41f2a;
+}
+
+.coverphoto button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.coverphoto button:active {
+  background-color: #a71a24;
+}
+
+/* Flavours Section */
+.main-flavours {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flavour-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.flavour-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.flavour-card {
+  max-width: 220px;
+  text-align: center;
+}
+
+.flavour-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #E82933;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flavour-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Why Choose Us Section */
+.main-why {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.main-why p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #171212;
+}
+
+.main-why h1 {
+  font-size: 40px;
+  color: #111111;
+}
+
+.main-why span {
+  color: #333;
+  font-size: 20px;
+}
+
+.why-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.why-card {
+  border: #E5DBDB 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 300px;
+  min-width: 250px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.why-card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #171212;
+}
+
+.why-card span {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Customer Reviews Section */
+.Reviews {
+  text-align: center;
+}
+
+.Reviews h2 {
+  font-size: 2rem;
+  color: #171212;
+}
+
+.cus-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cus-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.cus-review img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cus-review p {
+  color: #171212;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.cus-review span {
+  color: #876363;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* Footer Section - Stay Updated */
+.Footer {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.update h2 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.update span {
+  display: block;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.form-div form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f0f0;
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-div input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+}
+
+.form-div input::placeholder {
+  color: #9b7d7d;
+}
+
+.form-div button {
+  background-color: #E82933;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-div button:hover {
+  background-color: #c41f2a;
+}
+/* Prevent horizontal scroll globally */
+body, html {
+  overflow-x: hidden;
+}
+
+
+
+@media (max-width: 600px) {
+  .form-div form {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .form-div input,
+  .form-div button {
+    width: 100%;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coverphoto {
+    padding: 20px;
+    height: auto;
+  }
+
+  .coverphoto h1 {
+    font-size: 2rem;
+  }
+
+  .coverphoto p {
+    font-size: 1rem;
+  }
+
+  .flavour-gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .why-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cus-reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cus-review img {
+    width: 180px;
+    height: 180px;
+  }
+}

@@ -1,0 +1,161 @@
+.story {
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+}
+.coverphoto-story{
+  position: relative;
+  background-image: url('/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.9);
+}
+
+.coverphoto-story::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.30);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.coverphoto-story h1,
+.coverphoto-story p,
+.coverphoto-story button {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coverphoto-story h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.coverphoto-story p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cus-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cus-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.cus-review img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cus-review p {
+  color: #171212;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.cus-review span {
+  color: #876363;
+  padding: 10px 15px;
+  display: block;
+}
+
+.timeline {
+  padding: 60px 20px;
+  background-color: #fdf8f4;
+}
+
+.timeline h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 40px; /* increased to give space for centered dots */
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px; /* center line */
+  width: 4px;
+  background-color: #e36a3e;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 8px; /* vertically centers with h3 */
+  left: 12px; /* aligns with center of timeline-line */
+  width: 16px;
+  height: 16px;
+  background-color: #e36a3e;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #e36a3e;
+}
+
+.timeline-content {
+  padding-left: 40px;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.timeline-content p {
+  margin: 4px 0 0;
+  color: #666;
+  line-height: 1.5;
+}
