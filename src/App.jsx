@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
 import Story from './Pages/Story/Story';
 import Sustainability from './Pages/Sustainability/Sustainability';
+import Contact from './Pages/Contact/Contact';
 
 const App = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/" element={<Landing />} />
         <Route path='/story' element={<Story />} />
         <Route path='/sustainability' element={<Sustainability />} />
+        <Route path='/contact' element={<Contact />} />
         {/* Add more routes if needed */}
       </Routes>
 

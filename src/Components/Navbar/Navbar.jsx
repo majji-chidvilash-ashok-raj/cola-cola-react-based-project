@@ -13,7 +13,7 @@ const Navbar = ({ isLoggedIn, onLoginClick, handleShopNow }) => {
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/story">Our Story</NavLink></li>
           <li><NavLink to="/sustainability">Sustainability</NavLink></li>
-          <li><NavLink to="/Contact">Contact</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
         <button onClick={isLoggedIn ? handleShopNow : onLoginClick}>
           {isLoggedIn ? 'Shop Now' : 'Login'}
