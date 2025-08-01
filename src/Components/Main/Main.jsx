@@ -102,7 +102,7 @@ const Main = () => {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.15, duration: 0.4 }}
+              transition={{ delay: index * 0.2, duration: 0.4 }}
               viewport={{ once: true }}
             >
               <img src={review.Image} alt={`Customer ${review.name}`} />
