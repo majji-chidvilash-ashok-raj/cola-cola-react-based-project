@@ -63,3 +63,19 @@ export const team = [
         position: "Sustainability Director"
     }
 ]
+
+
+export const Practices = [
+    {
+        title: "Recyclable Packaging"
+    },
+    {
+        title: "Natural Ingredients"
+    },
+    {
+        title: "Low Carbon Footprint"
+    },
+    {
+        title: "Water Conservation"
+    }
+]

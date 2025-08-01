@@ -1,0 +1,205 @@
+.sustainability {
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+}
+.coverphoto-sus{
+  position: relative;
+  background-image: url('/forest.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.9);
+}
+
+.coverphoto-sus::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.30);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.coverphoto-sus h1,
+.coverphoto-sus p,
+.coverphoto-sus button {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coverphoto-sus h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.coverphoto-sus p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+.coverphoto-sus h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.coverphoto-sus p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.coverphoto-sus button {
+  cursor: pointer;
+  background-color: #54D12B;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.coverphoto-sus button:hover {
+  background-color: #268a05;
+}
+
+.coverphoto-sus button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.coverphoto-sus button:active {
+  background-color: #a71a24;
+}
+
+
+.practice-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.practice-card {
+  border: #E5DBDB 2px solid;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 250px;
+  min-width: 200px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.practice-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.manufacturing {
+
+  background-color: #fff;
+}
+
+.manufacturing h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.circle-icon {
+  font-size: 22px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  padding: 8px;
+  color: #5a7550;
+}
+
+.line {
+  width: 2px;
+  height: 60px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ccc,
+    #ccc 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin-top: 5px;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2d2d2d;
+}
+
+.content p {
+  margin: 6px 0 0;
+  font-size: 16px;
+  color: #5a7550;
+  max-width: 700px;
+}
+
+.sus-footer button {
+  cursor: pointer;
+  background-color: #54D12B;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.sus-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    gap: 20px;
+}
